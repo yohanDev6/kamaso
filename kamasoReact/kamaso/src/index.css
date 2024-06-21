@@ -5,9 +5,16 @@
   font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   height: 100vh;
   background-color: #d2d2d2;
+  font-family: 'Poppins', sans-serif;
 }
 

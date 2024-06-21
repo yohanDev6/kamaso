@@ -1,9 +1,10 @@
 import RegisterForm from "../components/forms/RegisterForm";
+import {Header, HeaderFull} from "../components/header/Header";
 
 export default function LoginRegister(){
     return (
         <div>
-            {/* header */}
+            <HeaderFull/>
             {/* loginform */}
             <RegisterForm/>
             {/* footer */}

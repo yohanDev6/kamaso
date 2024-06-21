@@ -1,4 +1,5 @@
 import LoginRegister from "./pages/LoginRegister";
+import './index.css';
 
 function App() {
   return (

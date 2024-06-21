@@ -9,8 +9,6 @@ export default function RegisterForm() {
         email: '',
         password: '',
         cPassword: '',
-        verified: false,
-        blocked: false
     });
 
     const [errors, setErrors] = useState({});
@@ -54,14 +52,36 @@ export default function RegisterForm() {
     };
 
     // Envia o formulário para o back-end
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        
         if (validation()) {
-            axios.post('http://localhost:8080/user', formData)
-                .then((response) => {
-                    alert(response.status)
-                })
-                .catch(alert('Erro ao enviar o formulário para o servidor'));
+            try {
+                alert("Enviando dados...");
+                const res = await axios.post("http://localhost:8080/user/", {
+                    name: formData.name,
+                    username: formData.username,
+                    email: formData.email,
+                    password: formData.password
+                });
+    
+                console.log('Response Status:', res.status);
+                console.log('Response Data:', res.data);
+            } catch (error) {
+                if (error.response) {
+                    // O servidor respondeu com um status diferente de 2xx
+                    console.error('Response Error:', error.response.data);
+                    console.error('Response Status:', error.response.status);
+                    console.error('Response Headers:', error.response.headers);
+                } else if (error.request) {
+                    // A requisição foi feita, mas não houve resposta
+                    console.error('Request Error:', error.request);
+                } else {
+                    // Algo aconteceu ao configurar a requisição que provocou um erro
+                    console.error('Error:', error.message);
+                }
+                console.error('Config Error:', error.config);
+            }
         }
     };
 
