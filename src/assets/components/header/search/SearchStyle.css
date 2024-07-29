@@ -1,0 +1,17 @@
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    font-family: 'Poppins';
+    width: 400px;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 14px;
+    text-align: left;
+    outline: none;
+    border: none;
+    background-color: #dbdbdb;
+}
