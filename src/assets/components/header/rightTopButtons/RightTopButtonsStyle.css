@@ -8,8 +8,11 @@
     outline: none;
     border: none;
     cursor: pointer;
-    padding: 0 0.7em;
-    margin: 0 0.4em;
+    padding: 0.2em 0.7em;
+    margin: 0 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-top-buttons button:hover {

@@ -1,9 +1,6 @@
 import userImageSrc from '../../../imgs/user/cesar-rincon-XHVpWcr5grQ-unsplash.jpg'
 import './RightTopButtonsStyle.css';
-import { IoAdd } from "react-icons/io5";
-import { IoMdNotificationsOutline } from "react-icons/io";
-import { MdOutlineChat } from "react-icons/md";
-
+import { IoAdd, IoNotificationsOutline, IoChatboxEllipsesOutline } from "react-icons/io5";
 
 export default function RightTopButtons(){
     return (
@@ -12,10 +9,10 @@ export default function RightTopButtons(){
                 <IoAdd className="icon"/>
             </button>
             <button>
-                <IoMdNotificationsOutline className="icon"/>
+                <IoNotificationsOutline className="icon"/>
             </button>
             <button>
-                <MdOutlineChat className="icon"/>
+                <IoChatboxEllipsesOutline className="icon"/>
             </button>
             <ProfileButton/>
         </div>

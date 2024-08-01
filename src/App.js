@@ -1,3 +1,4 @@
+import Aside from "./assets/components/aside/Aside";
 import Header from "./assets/components/header/Header";
 import Navigation from "./assets/components/navigation/Navigation";
 
@@ -9,7 +10,7 @@ function App() {
             <Header colorTheme={colorTheme}/>
             <div className="nav-aside">
                 <Navigation colorTheme={colorTheme}/>
-                <div></div>
+                <Aside/>
             </div>
         </div>
     );

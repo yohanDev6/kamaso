@@ -1,28 +1,25 @@
-import { IoMdHome } from "react-icons/io";
-import { FaShirt } from "react-icons/fa6";
-import { FaShoppingBag } from "react-icons/fa";
-import { FaGear } from "react-icons/fa6";
-import { IoIosInformationCircle } from "react-icons/io";
+import { IoHomeOutline, IoShirtOutline, IoBagOutline, IoBuildOutline, IoInformationCircleOutline } from "react-icons/io5";
 
 import './NavigationStyle.css';
 export default function Navigation({ colorTheme }){
     return (
         <nav style={{backgroundColor: colorTheme}}>
             <a href="http://localhost:3000">
-                <IoMdHome className="icon"/>
+                <IoHomeOutline className="icon"/>
             </a>
             <a href="http://localhost:3000">
-                <FaShirt className="icon"/>
+                <IoShirtOutline className="icon"/>
             </a>
             <a href="http://localhost:3000">
-                <FaShoppingBag className="icon"/>
+                <IoBagOutline className="icon"/>
             </a>
             <a href="http://localhost:3000">
-                <FaGear className="icon"/>
+                <IoBuildOutline className="icon"/>
             </a>
             <a href="http://localhost:3000">
-                <IoIosInformationCircle className="icon"/>
+                <IoInformationCircleOutline className="icon"/>
             </a>
+            <div className="rest"></div>
         </nav>
     );
 }
