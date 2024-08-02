@@ -29,6 +29,7 @@ code {
 .nav-aside {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 aside {

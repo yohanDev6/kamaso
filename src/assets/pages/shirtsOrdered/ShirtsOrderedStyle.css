@@ -1,0 +1,95 @@
+.shirts-ordered {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    width: 100%;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 75%;
+    margin: 1.5em auto;
+}
+
+.about {
+    padding: 1em;
+    width: 100%;
+    border-left: 0.3px solid lightgrey;
+}
+
+
+.shirt-img, .shirt-img > img {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.shirt-img > img {
+    height: 205px;
+    width: 205px;
+}
+
+.text {
+    margin-bottom: 0.7em;
+}
+
+.top-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.bottom-text {
+    margin-top: 0.7em;
+}
+
+.so-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.trash {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #f00;
+    padding: 5px;
+}
+
+.icon {
+    color: #fff;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.tags > div, .contact {
+    margin-right: 0.5em;
+}
+
+.shape, .contact {
+    padding: 7px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.contact {
+    background-color: #00f;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.paid, .delivered {
+    background-color: #0f0;
+}
