@@ -30,3 +30,9 @@ code {
   display: flex;
   flex-direction: row;
 }
+
+aside {
+  margin-top: 5em;
+  margin-left: 6em;
+  margin-right: 3em;
+}

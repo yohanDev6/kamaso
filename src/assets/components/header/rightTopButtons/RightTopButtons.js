@@ -1,20 +1,31 @@
-import userImageSrc from '../../../imgs/user/cesar-rincon-XHVpWcr5grQ-unsplash.jpg'
-import './RightTopButtonsStyle.css';
-import { IoAdd, IoNotificationsOutline, IoChatboxEllipsesOutline } from "react-icons/io5";
+import "./RightTopButtonsStyle.css";
+import {
+    IoAdd,
+    IoNotificationsOutline,
+    IoChatboxEllipsesOutline,
+    IoPersonOutline,
+} from "react-icons/io5";
+import { Link } from "react-router-dom";
 
-export default function RightTopButtons(){
+export default function RightTopButtons() {
     return (
         <div className="right-top-buttons">
             <button>
-                <IoAdd className="icon"/>
+                <Link to="/add">
+                    <IoAdd className="th-icon" />
+                </Link>
             </button>
             <button>
-                <IoNotificationsOutline className="icon"/>
+                <Link to="/">
+                    <IoNotificationsOutline className="th-icon" />
+                </Link>
             </button>
             <button>
-                <IoChatboxEllipsesOutline className="icon"/>
+                <Link to="/privatechat">
+                    <IoChatboxEllipsesOutline className="th-icon" />
+                </Link>
             </button>
-            <ProfileButton/>
+            <ProfileButton />
         </div>
     );
 }
@@ -22,7 +33,9 @@ export default function RightTopButtons(){
 function ProfileButton() {
     return (
         <button className="user-image">
-            <img src={userImageSrc} alt="User Profile"/>
+            <Link to="/profile">
+                <IoPersonOutline className="th-icon" />
+            </Link>
         </button>
     );
 }

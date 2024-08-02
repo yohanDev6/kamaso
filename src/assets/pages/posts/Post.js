@@ -22,10 +22,10 @@ const listPosts = posts.map((post) => (
 
 export default function Posts() {
     return (
-        <div>
+        <aside>
             <h3>Principais postangens</h3>
             <div className="posts">{listPosts}</div>
-        </div>
+        </aside>
     );
 }
 

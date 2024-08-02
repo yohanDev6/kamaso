@@ -12,6 +12,7 @@ header {
 
 header > div {
     margin: 0 0.5em;
+    width: 330%;
 }
 
 .logo {

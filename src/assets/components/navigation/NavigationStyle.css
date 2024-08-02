@@ -2,7 +2,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 58px;
+    top: 55px;
     left: 0;
 }
 
@@ -11,17 +11,21 @@ nav {
     height: 100vh;
 }
 
-nav a {
-    padding: 10px 12px;
+nav .ancora {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
+    outline: none;
+    border: none;
+    background-color: #fff;
 }
 
-nav a:hover {
+nav .ancora:hover {
     background-color: #0DF825;
 }
 
-.icon {
+.ln-icon {
     color: #000;
     height: 25px;
     width: 25px;
