@@ -1,0 +1,11 @@
+.div-comment-button {
+    background-color: #fff;
+}
+
+.div-comment-button:hover {
+    background-color:rgb(190, 190, 190);
+}
+
+.comment-icon {
+    color: #000;
+}

@@ -1,9 +1,7 @@
+import LikeButton from "../../components/buttons/like/LikeButton";
+import CommentButton from '../../components/buttons/comment/CommentButton';
+import ShareButton from '../../components/buttons/share/ShareButton';
 import "./PostStyle.css";
-import {
-    AiOutlineComment,
-    AiOutlineLike,
-    AiOutlineShareAlt,
-} from "react-icons/ai";
 
 // tests
 const posts = [];
@@ -38,15 +36,15 @@ function Post({ title, price }) {
             </div>
             <div className="actions">
                 <div className="likes">
-                    <AiOutlineLike className="icon" />
+                    <LikeButton size={25}/>
                     <span>0</span>
                 </div>
                 <div className="comment">
-                    <AiOutlineComment className="icon" />
+                    <CommentButton size={25}/>
                     <span>0</span>
                 </div>
                 <div className="shares">
-                    <AiOutlineShareAlt className="icon" />
+                    <ShareButton size={25}/>
                     <span>0</span>
                 </div>
             </div>

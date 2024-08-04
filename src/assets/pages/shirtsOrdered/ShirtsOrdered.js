@@ -1,10 +1,10 @@
-import { IoTrashOutline } from 'react-icons/io5';
 import shirtImg from '../../imgs/post/images.jpg';
+import TrashButton from '../../components/buttons/trash/TrashButton';
 import './ShirtsOrderedStyle.css';
 
 export default function ShirtsOrdered() {
     return (
-        <aside className='shirts-ordered'>
+        <aside>
             <h3>Camisas pedidas</h3>
             <ShirtOrdered 
             img={shirtImg}
@@ -52,18 +52,16 @@ function ShirtOrdered({ img, title, price, description, paymentStatus, shirtStat
                     </div>
                 </div>
                 <div className="so-actions">
-                    <button className="trash">
-                        <IoTrashOutline className="icon"/>
-                    </button>
-                    <div className="tags">
-                        <div className="paid shape">
+                    <TrashButton size={25}/>
+                    <div className="flex-row">
+                        <div className="paid flex">
                             <p>{paymentStatus}</p>
                         </div>
-                        <div className="delivered shape">
+                        <div className="delivered flex">
                             <p>{shirtStatus}</p>
                         </div>
                         <button className='contact'>
-                            <p>CONTATO</p>
+                            CONTATO
                         </button>
                     </div>
                 </div>

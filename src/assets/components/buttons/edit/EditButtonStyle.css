@@ -1,0 +1,11 @@
+.div-edit-button {
+    background-color: #00f;
+}
+
+.div-edit-button:hover {
+    background-color:rgb(0, 0, 190);
+}
+
+.edit-icon {
+    color: #fff;
+}

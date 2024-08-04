@@ -1,0 +1,11 @@
+.div-share-button {
+    background-color: #fff;
+}
+
+.div-share-button:hover {
+    background-color:rgb(190, 190, 190);
+}
+
+.share-icon {
+    color: #000;
+}

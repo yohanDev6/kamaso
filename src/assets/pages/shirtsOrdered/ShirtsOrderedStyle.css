@@ -1,8 +1,9 @@
 .shirts-ordered {
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
-    width: 100%;
+    width: 80%;
+    max-width: 700px;
+    min-width: 580px;
 }
 
 .order {
@@ -53,43 +54,38 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-}
-
-.trash {
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    background-color: #f00;
-    padding: 5px;
+    max-height: 30px;
 }
 
 .icon {
     color: #fff;
 }
 
-.tags {
-    display: flex;
-    flex-direction: row;
+.paid, .delivered, .contact {
+    height: 100%;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin-left: 1em;
 }
 
-.tags > div, .contact {
-    margin-right: 0.5em;
-}
-
-.shape, .contact {
-    padding: 7px 10px;
+.paid > p, .delivered > p, .contact {
+    text-align: center;
     color: white;
     font-weight: bold;
-    border-radius: 3px;
+}
+
+.paid, .delivered {
+    align-items: center;
+    background-color: #0f0;
 }
 
 .contact {
     background-color: #00f;
-    border: none;
     outline: none;
+    border: none;
     cursor: pointer;
 }
 
-.paid, .delivered {
-    background-color: #0f0;
+.contact:hover {
+    background-color: rgb(0, 0, 190);
 }

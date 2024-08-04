@@ -1,0 +1,11 @@
+.div-like-button {
+    background-color: #fff;
+}
+
+.div-like-button:hover {
+    background-color:rgb(190, 190, 190);
+}
+
+.like-icon {
+    color: #000;
+}
